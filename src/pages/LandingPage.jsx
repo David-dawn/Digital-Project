@@ -58,7 +58,7 @@ function LandingPage() {
 
           <div className="about-text">
             <h2>About</h2>
-            <p>
+            <p className="about-text-paragraph">
               Lorem Ipsum is simply dummy text of the printing and
               <br />
               typesetting industry. Lorem Ipsum has been the

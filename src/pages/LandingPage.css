@@ -487,27 +487,50 @@ section {
   }
 
   /* ABOUT SECTION */
-  .about-grid {
-    flex-direction: column;
-    gap: 2rem;
-    margin-left: 0;
-  }
+ .about-grid {
+  display: flex;
+  flex-direction: column-reverse; /* show text first on mobile */
+  gap: 0rem;
+  margin-left: 0;
+  align-items: center;
+  text-align: center;
+}
 
-  .about-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
+ .about-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
 
   .grid-image img {
-    width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+ .about-images .grid-image img {
+    width: 100%;
     height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   }
+
+ 
+
 
   .about-text {
     text-align: center;
     margin: 0 auto;
+  }
+    .about-text-paragraph br {
+    display: none;
+  }
+
+  .read-more{
+    margin-top: -5rem;
   }
 
   /* MISSION SECTION */
@@ -557,12 +580,9 @@ section {
   .contact-content {
     max-width: 100%;
   }
-
-  .contact-image img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0;
-  }
+.contact-image {
+  display: none;
+}
 
   .contact-form {
     width: 100%;
