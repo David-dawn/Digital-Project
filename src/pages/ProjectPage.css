@@ -176,3 +176,51 @@
     padding: 6px 12px;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-header h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: -5rem;
+  }
+
+  .project-list {
+    gap: 40px;
+  }
+
+  .project-card {
+    flex-direction: row;
+    gap: 24px;
+    padding: 16px 0;
+  }
+
+  .project-image {
+    width: 35%; /* slightly wider than mobile */
+  }
+
+  .project-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .project-info p {
+  line-height: 0;
+  margin-bottom: 0.5rem;
+}
+
+ .view-more-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+  .projects-pagination {
+    font-size: 13px;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: 2rem;
+  }
+
+  .arrow-btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}

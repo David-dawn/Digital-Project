@@ -131,3 +131,36 @@
     padding: 40px 16px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery-page {
+    padding: 60px 32px;
+  }
+
+  .gallery-header h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: -4rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-item {
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery-pagination {
+    justify-content: center;
+    gap: 12px;
+    font-size: 13px;
+    margin-top: 2rem;
+  }
+
+  .arrow-btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
